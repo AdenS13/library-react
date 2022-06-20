@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import EmptyCart from "../assets/empty_cart.svg"
 import { Link } from 'react-router-dom'
 
@@ -32,7 +32,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                                             <div className="cart__item">
 
                                                 <div className="cart__book">
-                                                    <img src={book.url} className="cart__book--img" />
+                                                    <img src={book.url} className="cart__book--img" alt="book img"/>
                                                     <div className="cart__book--info">
                                                         <span className="cart__book--title">
                                                             {book.title}
